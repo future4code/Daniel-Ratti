@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./IMG/kupono-kuwamura-LzgK6IMoSZM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+p {
+  text-align: center;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.links {
+  text-align: center;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #a9875d;
+}
+
+h2 {
+  text-align: center;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+table {
+  text-align: center;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: larger;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td,
+th {
+  border: solid;
+}
+
+img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
