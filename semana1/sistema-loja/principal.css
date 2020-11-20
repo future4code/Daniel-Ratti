@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./IMG/david-lezcano-Gikm-aEAIaE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+#head {
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.links {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  font-family: arial;
+  padding-top: 10px;
+  -webkit-text-stroke: px black;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #a9875d;
+}
+
+#texto {
+  text-align: center;
+  padding-top: 400px;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  -webkit-text-stroke: 1px black;
+}
+
+footer {
+  text-align: center;
+  padding-top: 200px;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.face {
+  width: 100px;
+  padding-top: 10px;
+}
+
+.insta {
+  width: 100px;
+  padding-top: 10px;
+}
+
+.tt {
+  width: 100px;
+  padding-top: 10px;
+}

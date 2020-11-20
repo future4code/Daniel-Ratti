@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./IMG/jannis-lucas-hEnciXYxR9A-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  -webkit-text-stroke: 1px black;
+}
+
+.links {
+  text-align: center;
+  font-family: arial;
+  font-weight: bold;
+  font-size: large;
+  -webkit-text-stroke: 0, 5px black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #a9875d;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-family: arial;
+  font-weight: bold;
+  font-size: xx-large;
+  padding-top: 200px;
+  -webkit-text-stroke: 1px black;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  color: black;
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: xx-large;
+  padding: 100px;
+}
+
+li {
+  padding-top: 30px;
+}
