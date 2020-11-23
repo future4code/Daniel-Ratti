@@ -30,7 +30,7 @@ img {
 }
 
 div > p:first-child {
-  display: inline;
+  padding-top: 10%;
 }
 
 div img {
@@ -70,15 +70,11 @@ div img {
 #container-de-descricao {
   background-color: #2274a5;
   color: white;
-  position: relative;
 }
-
 
 #container-de-descricao > ol {
   padding: 15px 0px;
-  
 }
-
 
 #container-para-comprar {
   background-color: #e7eb90;
