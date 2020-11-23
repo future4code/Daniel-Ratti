@@ -65,9 +65,17 @@ a {
   text-align: center;
 }
 
-.icone {
+.icone{
   height: 15px;
   width: 15px;
+}
+
+.icone:hover {
+    opacity:0.5 ;
+}
+
+.icone:active {
+  opacity: 1;
 }
 
 /** 
