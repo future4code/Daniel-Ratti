@@ -33,10 +33,7 @@ div > p:first-child {
   padding-top: 10%;
 }
 
-div img {
-    width: 20px;
-    height: 20px;
-}
+
 
 .botao-amarelo {
   display: block;
@@ -60,6 +57,7 @@ div img {
 
 .icone {
   height: 15px;
+  width: 15px;
 }
 
 /** 
@@ -111,6 +109,11 @@ td button {
   border-radius: 5px;
   color: black;
 }
+
+button:hover {
+    background:#ddb500;
+}
+
 
 .container-do-search {
   margin-top: 20px;
