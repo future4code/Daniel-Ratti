@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+nav {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.apresentaçao {
+  padding-top: 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+  font-family: "Roboto", sans-serif;
+}
+
+.formaçao {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.experiencias {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  padding-top: 80px;
+  
+
+}
+.galeria {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#projeto {
+  width: 40%;
+}
+
+#loja {
+  width: 40%;
+}
+
+#habilidades {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+h4 {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+form {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid orangered;
+}
+
+#redes {
+  text-align: center;
+  width: 50px;
+}
+
+footer {
+  padding-top: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+}
+
+::placeholder {
+    color: black;
+    font-size: larger;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
