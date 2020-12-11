@@ -18,3 +18,4 @@
 // EXERCICIOS LÓGICA DA PROGAMAÇÃO
 
 //1.
+// for, for of, for each
