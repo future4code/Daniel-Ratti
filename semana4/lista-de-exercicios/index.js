@@ -99,3 +99,20 @@
 //     diferenca *= -1
 // }
 // console.log(`A diferença entre eles é: ${diferenca}`);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//EXERCICIOS DE FUNÇÕES
+
+//1.
+
+// const array = [1, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// function  
+
+//2.
+
+// const alerta = () =>{
+//     return alert("Hello labenu!")
+// }
+// alerta ()
