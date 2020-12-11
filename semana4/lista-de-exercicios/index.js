@@ -133,3 +133,14 @@
 //     return retornaObjeto
 // }
 // console.log(criaRetangulo(20,30));
+
+//3.
+
+// const filme = {
+//     titulo: "Creed",
+//     ano:2015,
+//     diretor:"Ryan Coogler",
+//     atores:[ "Michael B. Jordan", "Sylvester Stallone", "Tessa Thompson"]
+// }
+// console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`);
+
