@@ -144,3 +144,17 @@
 // }
 // console.log(`Venha assistir ao filme ${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores}`);
 
+//4.
+
+// const pessoa = {
+//     nome: "Daniel Ratti",
+//     idade: "21",
+//     email: "danielpr55rr@gmail.com",
+//     endereco: "Rua Mont Royal, Jardim Montreal Residence, Indaiatuba"
+// }
+
+// const anon = (pessoa) => {
+//     pessoa.nome = "ANÔNIMO"
+//     return pessoa.nome
+// }
+
