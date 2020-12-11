@@ -189,3 +189,42 @@
 //     return menorDeIdade
 // }
 // console.log(returnKids(pessoas))
+
+//2.
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// function returnDois (array){
+//     const novo = array.map((mult)=>{
+//         return mult*2
+//     }
+//     )
+//     return novo
+// }
+// console.log(returnDois(array));
+
+
+// function returnTres (array){
+//     const novo2 = array.map((mult2)=>{
+//         return `${mult2 * 3}`
+//     }
+//     )
+//     return novo2
+// }
+// console.log(returnTres(array));
+
+// function parOuImpar (array) {
+//     const par = array.map((valor) =>
+//         {
+//             if(valor % 2 === 0)
+//             {
+//                 return `${valor} par`
+//             }else{
+//                 return `${valor} ímpar`
+//             }
+//         }
+//     )
+//     return par
+// }
+
+// console.log(parOuImpar(array))
