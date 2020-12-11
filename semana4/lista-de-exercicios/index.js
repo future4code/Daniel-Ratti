@@ -228,3 +228,32 @@
 // }
 
 // console.log(parOuImpar(array))
+
+//3.
+
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+
+// function podeEntrar(array){
+//     const check = array.filter((valor) =>{
+//         return valor.altura >= 1.5 && valor.idade > 14 && valor.idade < 60
+//     }
+//     )
+//     return check
+// }
+// console.log(podeEntrar(pessoas));
+
+// function naoPodeEntrar(array) {
+//     const check2 = array.filter((valor) =>{
+//         return valor.altura < 1.5 || valor.idade < 14 || valor.idade > 60
+//     }
+//     )
+//     return check2
+// }
+// console.log(naoPodeEntrar(pessoas));
