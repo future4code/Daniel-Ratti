@@ -121,3 +121,15 @@
 
 //1. Utilizamos arrays e objetos para organizar opções como uma lista.
 
+//2.
+
+// let criaRetangulo = (lado1, lado2) => {
+//     let retornaObjeto = {
+//         largura: lado1,
+//         altura: lado2,
+//         perímetro: 2*(lado1 + lado2),
+//         área: (lado1*lado2)
+//     }
+//     return retornaObjeto
+// }
+// console.log(criaRetangulo(20,30));
