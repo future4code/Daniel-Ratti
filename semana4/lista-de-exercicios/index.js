@@ -56,4 +56,19 @@
 //     }
 // }
 
-//4. 
+//4.
+
+// function triangulo (a, b, c){
+//     let resultado = ""
+
+//     if(a === b && a === c && b === c){
+//         resultado = "Equilátero"
+//     }
+//     else if(a === b || a === c || b === c ){
+//         resultado = "Isósceles"
+//     }else {
+//         resultado = "Escaleno"
+//     }
+
+//     return resultado
+// }
