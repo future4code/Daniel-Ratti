@@ -19,3 +19,27 @@
 
 //1.
 // for, for of, for each
+
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// for(let i= 0; i < array.length; i++){
+//     console.log(array[i]);
+// }
+
+// for(numeros of array){
+//     console.log(numeros);
+// }
+
+// array.forEach(elemento => {
+//     console.log(elemento);
+// })
+
+//2.
+
+//a. False
+//b. False
+//c. True
+//d. True
+//e. True
+
+
