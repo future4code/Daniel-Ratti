@@ -158,3 +158,34 @@
 //     return pessoa.nome
 // }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//EXERCICIOS FUNÇÕES DE ARRAY
+
+//1.
+
+// const pessoas = [
+//     { nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// function returnAdults(array) {
+//     const maiorDeidade = array.filter((maior) =>{
+//         return maior.idade >= 20
+//     }
+//     )
+//     return maiorDeidade
+// }
+
+// console.log(returnAdults(pessoas))
+
+// function returnKids(array){
+//     const menorDeIdade = array.filter((menor) => {
+//         return menor.idade < 20
+//     }
+//     )
+//     return menorDeIdade
+// }
+// console.log(returnKids(pessoas))
