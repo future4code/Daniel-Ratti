@@ -72,3 +72,30 @@
 
 //     return resultado
 // }
+
+//5.
+
+// const numero1 = 20
+// const numero2 = 10
+
+// let maiorNumero = 0
+// let diferenca = (numero1 - numero2)
+
+// if(numero1 > numero2){
+//     maiorNumero = numero1
+//     console.log(`O maior número é: ${maiorNumero}`);
+// }else {
+//     maiorNumero = numero2
+//     console.log(`O maior número é: ${maiorNumero}`);
+// }
+
+// if(numero1 % numero2 === 0){
+//     console.log(`${numero1} é divisivel por ${numero2}`);
+// }else{
+//     console.log(`${numero1} não é divisivel por ${numero2}`);
+// }
+
+// if(diferenca < 0){
+//     diferenca *= -1
+// }
+// console.log(`A diferença entre eles é: ${diferenca}`);
