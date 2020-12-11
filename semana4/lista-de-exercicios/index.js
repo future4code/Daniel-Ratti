@@ -10,3 +10,5 @@
 
 //3. o array1 esta guardando somente os numeros pares e o array2 os numeros impares,
 // os 3 consoles.log estao mostrando a quantidade total de numeros e o tamanho do array1 e 2.
+
+//4. O console.log(numero1) retorna o menor numero do array: -10 e o conle.log(numero2) retorna o primeiro numero do array.
