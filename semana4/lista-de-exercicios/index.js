@@ -116,3 +116,8 @@
 //     return alert("Hello labenu!")
 // }
 // alerta ()
+
+// EXERCICIOS DE OBJETOS 
+
+//1. Utilizamos arrays e objetos para organizar opções como uma lista.
+
