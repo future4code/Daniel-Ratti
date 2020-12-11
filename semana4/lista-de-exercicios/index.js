@@ -257,3 +257,27 @@
 //     return check2
 // }
 // console.log(naoPodeEntrar(pessoas));
+
+//4.
+// const consultas = [
+// 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+// 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+
+// const checkConsulta = (array) => {
+//     const check = array.map ((elemento,) => {
+//                 if (elemento.cancelada === false) {
+//                     return `Olá, ${elemento.genero === 'masculino'? 'Sr.': 'Sra'} ${elemento.nome}. Estamos enviando esta mensagem para ${elemento.genero === 'masculino'? 'lembrá-lo': 'lembrá-la'} da sua consulta no dia ${elemento.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`
+//                 }
+//                 else if (elemento.cancelada === true) {
+//                     return `Olá, ${elemento.genero === 'masculino'? 'Sr.': 'Sra' } ${elemento.nome}. Infelizmente, sua consulta marcada para o dia ${elemento.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`
+//                 }        
+//             }
+//             )
+//             return check
+//         }
+        
+//         console.log(checkConsulta(consultas));
+
