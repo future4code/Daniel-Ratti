@@ -57,7 +57,7 @@ class GetAllUsers extends React.Component {
     if (window.confirm("CUIDADO!!! QUER MESMO DELETAR?")) {
       axios
         .delete(
-          `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/`,
+          `https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${id}`,
           {
             headers: {
               Authorization: "daniel-ratti-epps",
@@ -81,7 +81,7 @@ class GetAllUsers extends React.Component {
           {this.state.usersList.map((user) => {
             return (
               <UsersList>
-                <li>{user.name}</li>
+                <li onClick={()=>this.props.getId(user.id)}>{user.name}</li>
                 <Button onClick={() => this.deleteItem(user.id)}>X</Button>
               </UsersList>
             );
