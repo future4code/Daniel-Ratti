@@ -1,19 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Header from "../Header/Header";
-
-import VideoRocket from "../../Img/Nocturne - Earth at Night [ 4k ].mp4";
 import { useHistory } from "react-router-dom";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import { Grid, Paper, Avatar, TextField, Button } from "@material-ui/core";
 import LockOpenOutlinedIcon from "@material-ui/icons/LockOpenOutlined";
-import axios from 'axios';
+import axios from "axios";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const loginUrl='https://us-central1-labenu-apis.cloudfunctions.net/labeX/daniel-ratti-epps/login'
+  const loginUrl =
+    "https://us-central1-labenu-apis.cloudfunctions.net/labeX/daniel-ratti-epps/login";
 
   const history = useHistory();
 
@@ -30,7 +29,7 @@ const LoginPage = () => {
     console.log(token);
 
     if (token) {
-      history.push("/login");
+      history.push("/");
     }
   }, [history]);
 
@@ -44,7 +43,7 @@ const LoginPage = () => {
       .then((res) => {
         console.log(res.data.token);
         localStorage.setItem("token", res.data.token);
-        history.push("/login");
+        history.push("/");
       })
       .catch((err) => {
         console.log(err);
@@ -69,22 +68,6 @@ const LoginPage = () => {
 
   return (
     <Grid>
-      {/* <video
-        src={VideoRocket}
-        autoPlay
-        muted
-        loop
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50%",
-          height: "100%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: "-1",
-        }}
-      /> */}
       <Header />
       <Paper elevation={10} style={PaperStyle}>
         <Grid align="center">

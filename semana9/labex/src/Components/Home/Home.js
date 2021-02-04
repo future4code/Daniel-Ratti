@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <MainHome>
       <Header />
-      {/* <CarouselSistem /> */}
       </MainHome>   
   );
 };

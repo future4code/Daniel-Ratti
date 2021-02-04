@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Home from '../Home/Home'
 import ManageTrip from '../ManageTrip/ManageTrip';
-import CreateTrip from '../CreateTrip/CreateTrip';
+import CreateTrip from '../CreateTrips/CreateTrip'
 import InfoTrip from '../InfoTrip/InfoTrip';
 import ApplyTrip from '../ApplyTrip/ApplyTrip';
 import Login from '../Login/Login';
@@ -20,7 +20,7 @@ const Router = () => {
         <Route exact path="/login">
           <Login />
         </Route>
-        <Route exact path="/trips/create ">
+        <Route exact path="/trips/create">
           <CreateTrip />
         </Route>
         <Route exact path="/trips/list">
@@ -33,7 +33,7 @@ const Router = () => {
           <Redirect to="/" />
         </Route>
         <Route path="/">
-          <p>Error</p>
+          <p>se fudeu</p>
         </Route>
       </Switch>
         </BrowserRouter>
