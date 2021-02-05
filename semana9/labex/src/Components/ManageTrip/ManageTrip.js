@@ -1,9 +1,6 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import Header from "../Header/Header"
-import { useTrips } from "../../Hooks/TripsInfos"
-import styled from "styled-components";
-import ContentTrips from "../InfoTrip/InfoTrip"
+import ContentTripsManage from "../InfoTrip/InfoTripManage"
 
 
 
@@ -11,7 +8,7 @@ const ListTripsPage = () => {
   return (
     <div>
       <Header />
-      <ContentTrips />
+      <ContentTripsManage />
       </div>
   );
 };

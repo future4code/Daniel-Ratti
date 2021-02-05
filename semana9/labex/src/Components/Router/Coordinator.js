@@ -18,6 +18,6 @@ export const goToHomePage = (history) => {
     history.push("/trips/create");
   };
   
-  export const goToTripDetailsPage = (history) => {
-    history.push("/trips/details");
+  export const goToTripDetailsPage = (history, id) => {
+    history.push(`/trips/details/${id}`);
   };

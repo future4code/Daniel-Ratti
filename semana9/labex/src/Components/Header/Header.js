@@ -4,6 +4,7 @@ import logo from "../../Img/LabeX-logo.png";
 import styled from "styled-components";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import { Button } from "@material-ui/core";
 import {
   goToHomePage,
   goToLogin,
@@ -24,15 +25,19 @@ const HeaderContainer = styled.div`
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
-const Nav = styled.ul``;
+const Nav = styled.div``;
 
 const AccountIcon = styled(AccountCircleIcon)`
   transform: scale(1.6);
   color: #00aaf0;
 `;
 
-const NavItem = styled.li`
-  display: inline;
+const ButtonLogOut = styled.button`
+margin-left:15px;
+`
+
+const NavItem = styled.div`
+  display: flex;
   cursor: pointer;
 `;
 
@@ -64,17 +69,28 @@ const Header = () => {
       {token && (
         <Nav>
           <NavItem>
-            <button onClick={() => goToListTripsPage(history)}>
-              Gerenciar Viagens
-            </button>
-            <Button variant="contained" color="primary">
-              Primary
+            <Button
+              onClick={() => goToListTripsPage(history)}
+              variant="contained"
+              color="primary"
+            >
+              Gerenciar viagens
             </Button>
-            <button onClick={logOut}>
+            <Button style={{
+              marginLeft:"15px",
+            }}
+              onClick={() => goToCreateTripsPage(history)}
+              variant="contained"
+              color="primary"
+            >
+              Cadastrar Viagem
+            </Button>
+            <ButtonLogOut onClick={logOut}>
               <ExitToAppIcon />
-            </button>
+            </ButtonLogOut>
           </NavItem>
         </Nav>
+        
       )}
     </HeaderContainer>
   );
