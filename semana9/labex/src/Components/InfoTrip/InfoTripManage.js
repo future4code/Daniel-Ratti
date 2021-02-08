@@ -5,6 +5,7 @@ import { useProtectedPage } from "../../Hooks/useProtectedPage";
 import { goToTripDetailsPage } from "../Router/Coordinator";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
+import axios from "axios";
 
 const DivButton = styled.div`
   display: flex;
@@ -70,6 +71,19 @@ const ContentTripsManage = () => {
   const list = useTrips();
   useProtectedPage();
 
+  const deleteTrip = (id) => {
+    axios
+      .delete(
+        `https://us-central1-labenu-apis.cloudfunctions.net/labeX/daniel-ratti-epps/trips/${id}`
+      )
+      .then((res) => {
+        alert("Viagem deletada, atualize a página.");
+      })
+      .catch((err) => {
+        alert("Erro ao deletar!");
+      });
+  };
+
   return (
     <div>
       <Title>Lista de viagens</Title>
@@ -101,7 +115,11 @@ const ContentTripsManage = () => {
                   >
                     More Info
                   </ButtonDetails>
-                  <Button variant="contained" color="secondary">
+                  <Button
+                    onClick={() => deleteTrip(trip.id)}
+                    variant="contained"
+                    color="secondary"
+                  >
                     Deletar
                   </Button>
                 </DivButton>

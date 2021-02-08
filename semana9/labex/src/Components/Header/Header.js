@@ -25,6 +25,13 @@ const HeaderContainer = styled.div`
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
+const ExitToApp = styled(ExitToAppIcon)`
+  transform: scale(2);
+  color:#303F9F;
+  margin-left:15px;
+  margin-top:6px;
+`;
+
 const Nav = styled.div``;
 
 const AccountIcon = styled(AccountCircleIcon)`
@@ -85,9 +92,8 @@ const Header = () => {
             >
               Cadastrar Viagem
             </Button>
-            <ButtonLogOut onClick={logOut}>
-              <ExitToAppIcon />
-            </ButtonLogOut>
+            <ExitToApp onClick={logOut}>
+            </ExitToApp>
           </NavItem>
         </Nav>
         

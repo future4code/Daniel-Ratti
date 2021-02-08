@@ -18,6 +18,7 @@ import {
 } from "./InfoTripsStyled";
 import { Button } from "@material-ui/core";
 
+
 const ContentTrips = () => {
   const history = useHistory();
   const list = useTrips();
@@ -52,14 +53,16 @@ const ContentTrips = () => {
                       <strong>Data:</strong> {trip.date}
                     </p>
                     <DivButton>
-                      <ButtonDetails style={{
-                        color:"black"
-                      }}
+                      <ButtonDetails
+                        style={{
+                          color: "black",
+                        }}
                         onClick={() => goToTripDetailsPage(history, trip.id)}
                       >
                         More Info
                       </ButtonDetails>
-                      <Button  onClick={() => goToApplicationFormPage(history)}
+                      <Button
+                        onClick={() => goToApplicationFormPage(history)}
                         variant="contained"
                         style={{
                           backgroundColor: "#00aaf0",
@@ -102,14 +105,16 @@ const ContentTrips = () => {
                       <strong>Data:</strong> {trip.date}
                     </p>
                     <DivButton>
-                      <ButtonDetails style={{
-                        color:"black"
-                      }}
+                      <ButtonDetails
+                        style={{
+                          color: "black",
+                        }}
                         onClick={() => goToTripDetailsPage(history, trip.id)}
                       >
                         More Info
                       </ButtonDetails>
-                      <Button  onClick={() => goToApplicationFormPage(history)}
+                      <Button
+                        onClick={() => goToApplicationFormPage(history)}
                         variant="contained"
                         style={{
                           backgroundColor: "#00aaf0",
