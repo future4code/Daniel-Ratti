@@ -6,6 +6,17 @@ import { goToFeedPage, goToSignUpPage } from "../Router/Coordinator";
 import { useHistory } from "react-router-dom";
 import useRequireLoggedOut from "../Hooks/useRequireLoggedOut";
 import LoggedContext from "../Context/LoggedContext";
+import styled from "styled-components"
+
+const MainLoginDiv = styled.div`
+display:flex;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+`
+
+const ButtonSubmit = styled.button`
+`
 
 const LoginPage = () => {
   const { logged, setLogged } = useContext(LoggedContext);
@@ -40,7 +51,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <MainLoginDiv>
       <h1>Login</h1>
       <form onSubmit={login}>
         <label>E-mail: </label>
@@ -51,7 +62,6 @@ const LoginPage = () => {
           value={form.email}
           onChange={handleInput}
         />
-        <br />
         <label>Senha: </label>
         <input
           name="password"
@@ -60,11 +70,12 @@ const LoginPage = () => {
           value={form.password}
           onChange={handleInput}
         />
-        <br />
-        <button type="submit">Entrar</button>
+        <ButtonSubmit type="submit">Entrar</ButtonSubmit>
       </form>
-      <button onClick={() => goToSignUpPage(history)}>Ainda não possui cadastro? Cadastre-se aqui!</button>
-    </div>
+      <button onClick={() => goToSignUpPage(history)}>
+        Ainda não possui cadastro? Cadastre-se aqui!
+      </button>
+    </MainLoginDiv>
   );
 };
 

@@ -54,7 +54,6 @@ const SignUpPage = () => {
           value={form.username}
           onChange={handleInput}
         />
-        <br />
 
         <label>E-mail: </label>
         <input
@@ -64,7 +63,6 @@ const SignUpPage = () => {
           value={form.email}
           onChange={handleInput}
         />
-        <br />
 
         <label>Senha: </label>
         <input
@@ -74,11 +72,12 @@ const SignUpPage = () => {
           value={form.password}
           onChange={handleInput}
         />
-        <br />
         <button type="submit">Cadastrar</button>
       </form>
 
-      <button onClick={() => goToLoginPage(history)}>Já possui um cadastro? Entre aqui!</button>
+      <button onClick={() => goToLoginPage(history)}>
+        Já possui um cadastro? Entre aqui!
+      </button>
     </div>
   );
 };

@@ -24,17 +24,20 @@ const PostCard = (props) => {
   } = props;
 
   return (
-    <MainContainer
-      onClick={() => {
-        goToPostPage(history, id);
-      }}
-    >
+    <MainContainer>
       <h3>{title}</h3>
       <h4>Posted by u/{username}</h4>
       <p>{text}</p>
       <h5>Curtidas: {likes}</h5>
       <LikeButton urlEnd={`${id}/vote`} liked={liked} update={updatePosts} />
       <h5>Comentários:{comments}</h5>
+      <button
+        onClick={() => {
+          goToPostPage(history, id);
+        }}
+      >
+        Ver publicação
+      </button>
     </MainContainer>
   );
 };
