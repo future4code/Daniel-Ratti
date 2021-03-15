@@ -1,0 +1,16 @@
+{
+  "name": "exerc2",
+  "version": "1.0.0",
+  "description": "Realizando operações matematicas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "clear && node index.js"
+  },
+  "keywords": [
+    "npm",
+    "epps"
+  ],
+  "author": "Daniel Ratti",
+  "license": "MIT"
+}
