@@ -1,0 +1,19 @@
+{
+  "name": "aula41",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "exc1": "tsc && node ./build/exc1.js",
+      "exc2": "tsc && node ./build/exc2.js",
+      "exc3": "tsc && node ./build/exc3.js",
+      "exc4": "tsc && node ./build/exc4.js"
+  },
+  "keywords": [],
+  "author": "Daniel Ratti",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}
