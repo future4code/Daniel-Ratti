@@ -1,6 +1,6 @@
-import { AddressInfo } from 'net';
-import { checkAge, getTimestamp } from "./verifiers/verifiers";
-import { user, users } from "./users/users";
+import { AddressInfo } from "net";
+import { checkAge, getTimestamp, today, findCpf } from "./verifiers/verifiers";
+import { user, users, extract } from "./users/users";
 import express, { Request, Response } from "express";
 import cors from "cors";
 
@@ -21,7 +21,9 @@ app.post("/create", (req: Request, res: Response) => {
     };
     if (!requestBody.username || !requestBody.cpf || !requestBody.birthDate) {
       errorCode = 422;
-      throw new Error("Ops! algum campo não esta válido , verifique os campos!");
+      throw new Error(
+        "Ops! algum campo não esta válido , verifique os campos!"
+      );
     }
 
     if (!getTimestamp(req.body.birthDate)) {
@@ -71,11 +73,11 @@ app.get("/users/:cpf", (req: Request, res: Response) => {
   }
 });
 
-app.put("/addToBalance", (req: Request, res: Response) => {
+app.put("/accinfo/deposit", (req: Request, res: Response) => {
   let errorCode: number = 400;
   try {
     const findUsername = users.find(
-      (u) => u.username === req.body.username
+      (user) => user.username === req.body.username
     ) as user;
     const findUserCpf = findUsername.cpf === req.body.cpf;
 
@@ -89,7 +91,7 @@ app.put("/addToBalance", (req: Request, res: Response) => {
     const addBalance = {
       value: Number(req.body.value),
       date: Date(),
-      description: "Depósito em dinheiro.",
+      description: "Depósito de dinheiro.",
     };
 
     findUsername.accinfo.push(addBalance);
@@ -97,6 +99,52 @@ app.put("/addToBalance", (req: Request, res: Response) => {
     res.status(200).send("Crédito enviado.");
   } catch (error) {
     res.status(errorCode).send(error.message);
+  }
+});
+
+app.post("/accinfo/payment", (req: Request, res: Response) => {
+  let errorCode: number = 400;
+  try {
+    if (!req.body.cpf || !Number(req.body.value)) {
+      errorCode = 422;
+      throw new Error(
+        "Algum campo está inválido, por favor confira o CPF e valor digitado."
+      );
+    }
+
+    const existingAccount: user | undefined = findCpf(req.body.cpf);
+
+    if (!existingAccount) {
+      errorCode = 404;
+      throw new Error("A conta não existe!");
+    } else if (existingAccount.balance < Number(req.body.value)) {
+      throw new Error("Saldo insuficiente");
+    } else {
+      let date: any = req.body.date;
+
+      if (!date) {
+        date = today;
+      } else if (!getTimestamp(date)) {
+        throw new Error("Formato errado. Por favor siga o formato DD/MM/YYYY");
+      } else {
+        date = getTimestamp(date);
+        if (date < today) {
+          throw new Error("Essa data já passou.");
+        }
+      }
+
+      const newPayment: extract = {
+        value: Number(req.body.value),
+        date: Date(),
+        description: req.body.description || "",
+      };
+
+      existingAccount.accinfo.push(newPayment);
+
+      res.status(202).send("Pagamento agendado com sucesso!");
+    }
+  } catch (error) {
+    res.status(errorCode).send({ message: error.message });
   }
 });
 
