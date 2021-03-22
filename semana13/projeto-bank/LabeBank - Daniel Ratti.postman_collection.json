@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e5f4c3b3-b966-4b39-9f0e-7c329403a8d0",
+		"_postman_id": "cb4928f1-d7f3-4d2f-baef-6c2a5018e846",
 		"name": "LabeBank - Daniel Ratti",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,7 +10,17 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:3003/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users"
+					]
+				}
 			},
 			"response": []
 		},
