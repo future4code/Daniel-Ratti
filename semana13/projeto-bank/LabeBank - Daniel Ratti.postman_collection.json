@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "cb4928f1-d7f3-4d2f-baef-6c2a5018e846",
+		"name": "LabeBank - Daniel Ratti",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get allUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"username\": \"Jose\",\r\n      \"cpf\": \"4764360897\",\r\n      \"birthDate\": \"01/03/2001\",\r\n      \"balance\": 20,\r\n      \"extract\": []\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findUserByCpf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/users/:cpf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"users",
+						":cpf"
+					],
+					"variable": [
+						{
+							"key": "cpf",
+							"value": "3764360897"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addToBalance",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"    "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Daniel\",\r\n  \"cpf\": \"3764360897\",\r\n  \"value\": 400,\r\n  \"date\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/accinfo/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"accinfo",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"cpf\": \"3764360897\",\r\n  \"value\": 400,\r\n  \"description\":\"teste\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/accinfo/payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"accinfo",
+						"payment"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
