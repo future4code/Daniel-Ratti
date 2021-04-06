@@ -2,7 +2,7 @@
 
 a)
 
-- Sim, pois uma string pode conter números e letras juntos, tornando assim o token mais seguro.
+Sim, pois uma string pode conter números e letras juntos, tornando assim o token mais seguro.
 
 b)
 
@@ -17,11 +17,11 @@ export function generate(): string {
 
 a)
 
-- O userTableName está chamando a tabela 'User'.
+O userTableName está chamando a tabela 'User'.
 
-- A connection é referente aos dados de acceso ao banco que dados que estão guardados no .env.
+A connection é referente aos dados de acceso ao banco que dados que estão guardados no .env.
 
-- A query createUser está inserindo na tabela 'User' id, email e password.
+A query createUser está inserindo na tabela 'User' id, email e password.
 
 b)
 
@@ -35,6 +35,20 @@ CREATE TABLE User (
 
 # EXERCÍCIO 03
 
-a) Resposta:
+a)
 
-- as string está definindo que que o valor recebido será uma string.
+as string está definindo que que o valor recebido será uma string.
+
+# EXERCÍCIO 07
+
+a)
+
+o as any indica que pode ser passado qualquer valor.
+
+b)
+
+```
+   export const getTokenData = (token: string): AuthenticationData => {
+  return jwt.verify(token, process.env.JWT_KEY as string) as AuthenticationData;
+};
+```
