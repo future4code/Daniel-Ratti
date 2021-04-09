@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node --inspect ./build/index.js",
-    "dev-start": "ts-node-dev ./src/index.ts"
+    "start": "tsc && node ./build/index.js",
+    "table": "tsc && node ./build/database/migrations/createTables.js",
+    "dev": "ts-node-dev ./src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Ratti",
   "license": "ISC",
