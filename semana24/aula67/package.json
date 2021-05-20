@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "build": "tsc",
+    "iteractive-factorial": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/iteractive/factorial",
+    "iteractive-fibonacci": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/iteractive/fibonacci",
+    "iteractive-print-characters": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/iteractive/print_characters",
+    "recursive-factorial": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/recursive/factorial",
+    "recursive-fibonacci": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/recursive/fibonacci",
+    "recursive-print-characters": "clear && tsnd --transpile-only --ignore-watch node_modules ./src/recursive/print_characters"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
