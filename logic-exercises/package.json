@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ex1": "clear && tsnd --transpile-only --ignore-watch node_modules src/missingNumber.ts"
+    "ex1": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc1.ts",
+    "ex2": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc2.ts"
   },
   "keywords": [],
   "author": "Daniel Ratti",
