@@ -1,0 +1,21 @@
+{
+  "name": "logic-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ex1": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc1.ts",
+    "ex2": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc2.ts"
+  },
+  "keywords": [],
+  "author": "Daniel Ratti",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@types/node": "^15.6.1",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
