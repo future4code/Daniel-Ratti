@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "ex1": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc1.ts",
-    "ex2": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc2.ts"
+    "ex2": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc2.ts",
+    "ex3": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc3.ts",
+    "ex4": "clear && tsnd --transpile-only --ignore-watch node_modules src/exc4.ts"
   },
   "keywords": [],
   "author": "Daniel Ratti",
